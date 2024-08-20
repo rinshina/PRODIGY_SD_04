@@ -1,0 +1,108 @@
+.sudoku-board {
+    border-collapse: collapse;
+}
+
+.sudoku-board td {
+    border: 1px solid #ccc; /* Default border for cells */
+    padding: 8px;
+    text-align: center;
+}
+
+.sudoku-board input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Red border for invalid cells */
+.invalid-cell {
+    border: 1px solid red; /* Red border for invalid cells */
+    background-color: #ff0000; /* Ensure background is white so border stands out */
+}
+
+/* Red border for entire invalid row */
+.invalid-row {
+    border-top: 1px solid red; /* Top border of the row */
+    border-bottom: 1px solid red; /* Bottom border of the row */
+}
+
+/* Red border for entire invalid column */
+.invalid-col {
+    border-left: 1px solid red; /* Left border of the column */
+    border-right: 1px solid red; /* Right border of the column */
+}
+
+/* Red border for entire invalid subgrid */
+.invalid-subgrid {
+    border: 1px solid red; /* Red border for invalid subgrid */
+}
+/* Existing styles */
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+  
+  td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+  
+  input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove default border */
+    color: white; /* White text */
+    padding: 5px 20px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline block display */
+    font-size: 16px; /* Font size */
+    margin: 5px auto; /* Margin to center button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Container for centering the button */
+  .button-container {
+    text-align: center; /* Center button inside container */
+    margin-top: 10px; /* Margin from top */
+  }
+  
+  /* Styles for invalid cells, rows, columns, and subgrids */
+  .invalid-cell {
+    border: 1px solid red;
+  }
+  
+  .invalid-row {
+    border-top: 2px solid red;
+  }
+  
+  .invalid-col {
+    border-left: 2px solid red;
+  }
+  
+  .invalid-subgrid {
+    border: 2px solid red;
+    border-radius: 3px;
+  }
+  
+  /* Styles for app container and paragraph */
+  .app {
+    text-align: center;
+  }
+  .app h1{
+    margin-bottom: 5px;
+  }
+  .app p {
+    color: red; /* Red font color for messages */
+    font-size: 16px; /* Font size for message */
+    font-weight: bold;
+  }
+  
